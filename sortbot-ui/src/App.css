@@ -37,6 +37,21 @@
   }
 }
 
+.sorter-description
+{
+  display: flex;
+  max-width: 632px;
+  text-align: center;
+  flex-direction: column;
+}
+.sorter-form{
+  max-width: 332px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #535bf2;
+  border-radius: 14px;
+}
 .card {
   padding: 2em;
 }

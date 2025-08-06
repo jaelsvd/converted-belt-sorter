@@ -51,7 +51,17 @@
   flex-direction: column;
   background: #535bf2;
   border-radius: 14px;
+  min-width: 300px;
+
 }
+.measure-txt{
+  color:#f28d59;
+}
+
+.package-type{
+ color: #6267EAD3;
+}
+
 .card {
   padding: 2em;
 }

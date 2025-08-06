@@ -54,16 +54,18 @@ export default function ConvertedBeltSorter() {
 
                 <div className="sorter-description">
                     <p>
-                        A package is <strong>bulky</strong>  if its volume (Width x Height x Length) is greater than or equal to 1,000,000 cm³ or when one of its dimensions is greater or equal to 150 cm.
+                        A package is <strong className="package-type">bulky</strong>  if its volume (
+                        <span className="measure-txt">Width</span> x 
+                        <span className="measure-txt"> Height</span> x 
+                        <span className="measure-txt"> Length</span>) is greater than or equal to 1,000,000 cm³ or when one of its dimensions is greater or equal to 150 cm.
                     </p>
                     <p>
-                        A package is <strong>heavy</strong> when its mass is greater or equal to 20 kg.
+                        A package is <strong className="package-type">heavy</strong> when its mass is greater or equal to 20 kg.
                     </p>
                 </div>
             </div>
-            <div className="grid grid-flow-col">
-                <div>
-                    <form onSubmit={handleSubmit} className="space-y-4 sorter-form">
+            <div className="grid grid-flow-col justify-center">
+                <form onSubmit={handleSubmit} className="space-y-4 sorter-form">
                         {[
                             { label: "Width (cm)", name: "width" },
                             { label: "Height (cm)", name: "height" },
@@ -89,7 +91,6 @@ export default function ConvertedBeltSorter() {
                             Sort Package
                         </button>
                     </form>
-                </div>
                 {result && (
                     <div className="stackable-box">
                         <div>
